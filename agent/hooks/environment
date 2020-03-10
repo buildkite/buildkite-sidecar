@@ -1,0 +1,10 @@
+#!/bin/bash
+
+about_vars=($(printenv | grep ^BUILDKITE_ABOUT | cut -d= -f1))
+
+for about_var in "${about_vars[@]}"
+do
+	echo "${about_var}"
+	printenv "${about_var}"
+	echo
+done
