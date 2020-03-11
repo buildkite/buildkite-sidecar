@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 about_vars=($(printenv | grep ^BUILDKITE_ABOUT | cut -d= -f1))
 
