@@ -9,3 +9,4 @@ FROM busybox:musl
 COPY --from=1 /buildkite /buildkite
 COPY bin/bash /bin/bash
 VOLUME /buildkite
+VOLUME /bin
