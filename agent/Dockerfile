@@ -7,5 +7,5 @@ COPY hooks /buildkite/hooks
 
 FROM busybox:musl
 COPY --from=1 /buildkite /buildkite
-RUN ln -s /bin/sh /bin/bash
+COPY bin/bash /bin/bash
 VOLUME /buildkite
